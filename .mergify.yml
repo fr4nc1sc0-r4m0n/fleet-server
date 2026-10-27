@@ -283,3 +283,11 @@ pull_request_rules:
       backport:
         branches:
           - "9.6"
+  - name: backport patches to 9.12 branch
+    conditions:
+      - merged
+      - label=backport-9.12
+    actions:
+      backport:
+        branches:
+          - "9.12"
